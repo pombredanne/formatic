@@ -2,13 +2,11 @@
 
 [![travis](https://travis-ci.org/zapier/formatic.svg?branch=master)](https://travis-ci.org/zapier/formatic)
 
-Automatic forms.
+Automatic forms. Find it on NPM - [https://www.npmjs.com/package/formatic](https://www.npmjs.com/package/formatic).
 
 ## Warning!
 
-Formatic is currently early alpha and still in heavy development. Everything is
-subject to change! You should probably just look away till this warning goes
-away!
+Formatic is currently in use in production, but the API will likely change significantly in the not-too-distant future.
 
 ## Start hacking
 
@@ -16,24 +14,15 @@ away!
 git clone git@github.com:zapier/formatic.git
 cd formatic
 npm install
-npm run live
+npm start
 ```
 
-Point your browser to `localhost:3000/index.html`. Hack away on the code, the
+Point your browser to `localhost:3000/demo/index.html`. Hack away on the code, the
 styles or the HTML in the demo directory, and the browser will automatically
 reload with your changes.
 
 __Note__: Don't mess with the files in the `live` directory. All those are copied
 from elsewhere.
-
-## Build
-
-```
-npm run build
-```
-
-This will build two files in the build directory: formatic-min.js (minified)
-and formatic-dev.js (not minified and includes source maps for development).
 
 ## What is formatic?
 
@@ -87,4 +76,4 @@ If you use the standalone build, you can just the global `Formatic'.
 ## Documentation
 
 The [documentation](http://zapier.github.io/formatic/) is a work in progress,
-but there's already a lot of useful info there.
+but there's already a lot of useful info there. **Currently, it's way out of date though.**

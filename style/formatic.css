@@ -1,4 +1,4 @@
-charset "UTF-8";
+@charset "UTF-8";
 
 .formatic {
   /*font-family: 'Open Sans', Helvetica, arial, sans-serif;*/
@@ -66,7 +66,7 @@ charset "UTF-8";
 
 .formatic .dropdown-field .field-choices-container {
   max-height: 400px;
-  overflow-y: scroll;
+  overflow-y: auto;
   position: absolute;
   z-index: 1000;
   background: #fff;
@@ -81,7 +81,7 @@ charset "UTF-8";
 
 .formatic .choices-container {
   max-height: 400px;
-  overflow-y: scroll;
+  overflow-y: auto;
   position: absolute;
   z-index: 1000;
   background: #fff;
@@ -129,6 +129,10 @@ charset "UTF-8";
   white-space: nowrap;
 }
 
+.formatic .choice.hover {
+  background-color: #ddd;
+}
+
 .formatic .reveal-enter {
   opacity: 0.01;
   transition: opacity .1s ease-in;
@@ -173,6 +177,11 @@ div.pretty-text-box {
   line-height: 1.42857143;
   padding: 6px 12px;
 }
+
+div.pretty-text-box:hover {
+  border: 1px solid blue;
+}
+
 
 .formatic .pretty-part-left, .formatic .pretty-part-right {
 }
@@ -258,4 +267,12 @@ div.pretty-text-box {
 
 .formatic .readonly {
   background-color: LightGrey;
+}
+
+.formatic .placeholder {
+  font-style: italic;
+}
+
+.formatic .validation-error-duplicate-key {
+  background-color: pink;
 }
